@@ -1,28 +1,33 @@
 /* Set Fonts and Resets */
 body,
 html {
-  background: rgb(233, 44, 161);
+  background: rgb(0,212,255);
+  background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(91,44,226,1) 100%); 
   margin: 0;
   overflow-x: hidden;
   padding: 0;
+  
+}
+
+
+h1 {
+  text-align: center;
+  margin: 2em;
+  color: whitesmoke;
 }
 
 /* With Flexbox, Horizontally and vertically cneter */
 body {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
   min-height: 100vh;
+
 }
 
 
 /* Actual Keyboard Keys */
 kbd {
   display: block;
-  font-size: 4rem;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
 }
 
 /* Name of Sound */
@@ -36,11 +41,11 @@ kbd {
 .keys {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-  position: relative;
+  grid-gap: 1px;
+  grid-template-rows: auto;
+  width: 482px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Visual Keys / Squares */
@@ -51,9 +56,13 @@ kbd {
   padding: 1rem 0.5rem;
 
   /* Styling of keys */
-  width: 10rem;
+  width: 8rem;
+  height: 6rem;
+  background: rgb(248,0,161);
+  background: radial-gradient(circle, rgb(145, 102, 130) 0%, rgb(132, 58, 86) 100%);
   text-align: center;
-  outline: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 0 6px 10px rgb(0, 0, 0);
   
   /* Change mouse pointer */
   cursor:pointer;
