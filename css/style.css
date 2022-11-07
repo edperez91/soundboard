@@ -1,8 +1,8 @@
 /* Set Fonts and Resets */
 body,
 html {
-  background: rgb(0,212,255);
-  background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(91,44,226,1) 100%); 
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 
   margin: 0;
   overflow-x: hidden;
   padding: 0;
@@ -63,6 +63,7 @@ kbd {
   text-align: center;
   border-radius: 20px;
   box-shadow: 0 6px 10px rgb(0, 0, 0);
+  opacity: .5; 
   
   /* Change mouse pointer */
   cursor:pointer;
@@ -81,5 +82,11 @@ kbd {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
-  background: white;
+}
+
+.key {
+  transition: transform 250ms, opacity 400ms;
+}
+.key:hover {
+  transform: scale(1.2);
 }
